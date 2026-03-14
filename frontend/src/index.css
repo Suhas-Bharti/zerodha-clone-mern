@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding-top: 75px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav-link {
+  margin-left: 45px;
+}
+
+footer a {
+  color: #383737;
+  text-decoration: none;
+  font-size: 15px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+footer a:hover {
+  color: #141212;
+  text-decoration: none;
+}
+
+.footer-last a {
+  margin-right: 25px;
+}
+
+#supportHero {
+  padding: 45px;
+  color: white;
+  background-color: rgb(56, 126, 209);
+}
+
+#supportHero a{
+  color: white;
+  margin-right: 25px;;
+}
+
+#supportWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+
+.searchSupport {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 5px 15px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.searchSupport .fa-search {
+  color: #999; /* Grey icon color */
+  margin-right: 10px;
+}
+
+.searchSupport input {
+  border: none !important;      /* Border hataya */
+  outline: none !important;     /* Blue line hatayi */
+  box-shadow: none !important;  /* Blue spread/glow hataya */
+  padding: 10px 5px !important;
+  width: 100%;
+}
+
+/* Jab input par click karein tab bhi kuch na ho */
+.searchSupport input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
