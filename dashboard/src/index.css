@@ -1077,3 +1077,313 @@ hr {
   background-color: #3b82f6;
   color: white;
 }
+
+/* ============================================================
+   RESPONSIVE STYLES — DASHBOARD
+   ============================================================ */
+
+/* ---------- Hamburger button (hidden on desktop) ---------- */
+.hamburger-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: auto;
+}
+
+.hamburger-btn span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: rgb(70, 70, 70);
+  border-radius: 2px;
+}
+
+/* ---------- Watchlist toggle button (hidden on desktop) ---------- */
+.watchlist-toggle-btn {
+  display: none;
+}
+
+/* ---------- Watchlist wrapper ---------- */
+.watchlist-wrapper {
+  flex-basis: 32%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* fund-card — fluid width */
+.fund-card {
+  width: 100%;
+  max-width: 350px;
+}
+
+/* ============================================================
+   TABLET  (≤ 992px)
+   ============================================================ */
+@media (max-width: 992px) {
+
+  /* TopBar: stack indices + menu vertically */
+  .topbar-container {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 8px 0;
+  }
+
+  .indices-container {
+    flex-basis: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    justify-content: center;
+    padding: 8px 16px;
+  }
+
+  .menu-container {
+    flex-basis: 100%;
+    padding: 8px 16px;
+  }
+
+  /* Dashboard: WatchList narrows */
+  .watchlist-container,
+  .watchlist-wrapper {
+    flex-basis: 38%;
+  }
+
+  .content {
+    flex-basis: 62%;
+  }
+
+  /* Summary data section */
+  .data {
+    width: 100%;
+  }
+}
+
+/* ============================================================
+   MOBILE  (≤ 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+
+  /* ---- TopBar ---- */
+  .topbar-container {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+  }
+
+  /* ---- Hamburger visible, menus hidden by default ---- */
+  .hamburger-btn {
+    display: flex;
+  }
+
+  .menus {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 8px 0 12px;
+    border-top: 1px solid #eee;
+  }
+
+  /* when menu is open */
+  .menus.menus-open {
+    display: flex;
+  }
+
+  .menus ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menus li {
+    display: block;
+    margin: 0;
+    padding: 4px 0;
+  }
+
+  .menu {
+    font-size: 0.95rem;
+    padding: 6px 0;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .profile {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  /* ---- Dashboard layout: full width, watchlist hidden ---- */
+  .dashboard-container {
+    flex-direction: column;
+    height: auto;
+    min-height: 90vh;
+  }
+
+  /* Watchlist toggle button visible */
+  .watchlist-toggle-btn {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    background: #f3f3f3;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    font-size: 0.85rem;
+    cursor: pointer;
+    color: rgb(70, 70, 70);
+  }
+
+  .watchlist-toggle-btn:hover {
+    background: #e8e8e8;
+  }
+
+  /* Watchlist hidden by default on mobile */
+  .watchlist-wrapper {
+    display: none;
+    flex-basis: 100%;
+    height: auto;
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+
+  /* Show when toggled */
+  .watchlist-wrapper.watchlist-visible {
+    display: block;
+  }
+
+  .watchlist-container {
+    flex-basis: 100%;
+    width: 100%;
+    box-shadow: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  /* watchlist-number bar — full width on mobile */
+  .watchlist-number {
+    width: 100%;
+    position: relative;
+    bottom: auto;
+    left: auto;
+  }
+
+  /* Content full width */
+  .content {
+    flex-basis: 100%;
+    width: 100%;
+    padding: 16px;
+    height: auto;
+    overflow-y: visible;
+  }
+
+  /* ---- Tables: horizontal scroll ---- */
+  .order-table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .order-table table {
+    min-width: 600px;
+  }
+
+  /* ---- Summary data ---- */
+  .data {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .data hr {
+    display: none;
+  }
+
+  .data .first,
+  .data .second {
+    flex: 1 1 100%;
+  }
+
+  /* ---- Funds ---- */
+  .funds-page {
+    padding: 16px;
+  }
+
+  .funds-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .fund-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .funds-container {
+    flex-direction: column;
+  }
+
+  /* ---- Apps ---- */
+  .apps-page {
+    padding: 16px;
+  }
+
+  /* ---- Holdings row summary ---- */
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .col {
+    flex-basis: 100%;
+    margin-bottom: 8px;
+  }
+
+  /* ---- BuyActionWindow already handled in BuyActionWindow.css ---- */
+}
+
+/* ============================================================
+   EXTRA SMALL  (≤ 480px)
+   ============================================================ */
+@media (max-width: 480px) {
+
+  .index {
+    font-size: 0.7rem;
+  }
+
+  .index-points {
+    font-size: 0.7rem;
+  }
+
+  .percent {
+    font-size: 0.7rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .order-table td,
+  .order-table th {
+    padding: 8px 6px;
+    font-size: 0.75rem;
+  }
+
+  .apps-page {
+    padding: 10px;
+  }
+
+  .apps-header h2 {
+    font-size: 20px;
+  }
+}

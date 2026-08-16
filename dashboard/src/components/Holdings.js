@@ -55,8 +55,8 @@ const data = {
         <>
             <h3 className='title'>Holdings ({allHoldings.length}) </h3>
 
-            <div className='order-table'>
-                <table>
+            <div className='order-table' style={{ overflowX: 'auto' }}>
+                <table style={{ minWidth: '600px' }}>
                     <thead>
                         <tr>
                             <th>Instrument</th>

@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import Apps from "./Apps";
 import Funds from "./Funds";
 import Holdings from "./Holdings";
-
 import Orders from "./Orders";
 import Positions from "./Positions";
 import Summary from "./Summary";
@@ -13,10 +12,23 @@ import WatchList from "./WatchList";
 import { GeneralContextProvider } from "./GeneralContext";
 
 const Dashboard = () => {
+    const [showWatchlist, setShowWatchlist] = useState(false);
+
     return (
         <GeneralContextProvider>
+            {/* Mobile watchlist toggle button */}
+            <button
+                className="watchlist-toggle-btn"
+                onClick={() => setShowWatchlist(!showWatchlist)}
+                aria-label="Toggle Watchlist"
+            >
+                {showWatchlist ? "✕ Close Watchlist" : "☰ Watchlist"}
+            </button>
+
             <div className='dashboard-container'>
-                <WatchList />
+                <div className={`watchlist-wrapper${showWatchlist ? " watchlist-visible" : ""}`}>
+                    <WatchList />
+                </div>
                 <div className='content'>
                     <Routes>
                         <Route path="/" element={<Summary />} />
