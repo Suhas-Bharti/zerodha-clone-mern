@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Suhas-Bharti/zerodha-backend#readme",
   "devDependencies": {
-    "nodemon": "^3.1.11"
+    "nodemon": "^3.1.14"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",
