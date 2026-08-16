@@ -121,8 +121,9 @@ npm install
 Create a `.env` file in the backend folder:
 
 ```
-MONGO_URI=your_mongodb_connection_string
-PORT=3000
+MONGO_URL= your_mongodb_connection_string
+PORT=3002
+TOKEN_KEY=zerodha_clone_secret_key
 ```
 
 Start the backend server:
