@@ -8,7 +8,7 @@ function Brokerage() {
                 <h1 className="fs-3 text-muted mb-4">Charges explained</h1>
 
                 {/* LEFT COLUMN */}
-                <div className="col-6 p-3">
+                <div className="col-12 col-md-6 p-3">
                     <p className="fs-5 text-muted">
                         Securities/Commodities transaction tax
                     </p>
@@ -118,7 +118,7 @@ function Brokerage() {
 
 
                 {/* RIGHT COLUMN */}
-                <div className="col-6 p-3">
+                <div className="col-12 col-md-6 p-3">
                     <p className="fs-5 text-muted">GST</p>
                     <p className="small text-secondary">
                         Tax levied by the government on the services rendered. 18% of

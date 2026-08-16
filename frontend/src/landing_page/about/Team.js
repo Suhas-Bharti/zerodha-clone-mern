@@ -10,8 +10,8 @@ function Team() {
                 </h1>
             </div>
             <div className='row mt-3 text-muted p-3'>
-                <div className='col-6 text-center'>
-                     <img src='media/images/bharti.png' style={{borderRadius:"100%", width:"50%"}} />
+                <div className='col-12 col-md-6 text-center mb-4'>
+                     <img src='media/images/bharti.png' className='img-fluid' style={{borderRadius:"100%", width:"50%", maxWidth:"200px"}} />
                      <h1 className='mt-3' style={{fontSize:"1.5em"}}>
                         Suhas Bharti <br />
                      </h1>
@@ -19,7 +19,7 @@ function Team() {
                         Founder, CEO
                      </h6>
                 </div>
-                <div className='col-6' style={{ fontSize: "1.2em", lineHeight: "2" }}>
+                <div className='col-12 col-md-6' style={{ fontSize: "1.2em", lineHeight: "2" }}>
                     <p>
                         Suhas bootstrapped and founded Zerodha in 2010 to overcome the hurdles he faced during his decade long stint as a trader. Today, Zerodha has changed the landscape of the Indian broking industry.
                     </p>

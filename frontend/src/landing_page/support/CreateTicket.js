@@ -5,9 +5,9 @@ function CreateTicket() {
         <div className='container'>
             <div className='row mt-5 mb-5'>
                 <h1 className='text-center mb-5 fs-2'>To create a ticket, select a relevant topic</h1>
-                <div className='col-4 mt-4 p-3'>
+                <div className='col-12 col-sm-6 col-md-4 mt-4 p-3'>
                     <p className='fs-4'>
-                        <i class="fa fa-plus-circle" aria-hidden="true"></i> Account Openning
+                        <i className="fa fa-plus-circle" aria-hidden="true"></i> Account Openning
                     </p>
                     <ul>
                         <a href='#' style={{ textDecoration: 'none', lineHeight: '2.5' }}><li>Minor</li></a>
@@ -18,9 +18,9 @@ function CreateTicket() {
                     </ul>
                 </div>
 
-                <div className='col-4 mt-4 p-3'>
+                <div className='col-12 col-sm-6 col-md-4 mt-4 p-3'>
                     <p className='fs-4'>
-                        <i class="fa fa-user-circle-o" aria-hidden="true"></i> Your Zerodha Account
+                        <i className="fa fa-user-circle-o" aria-hidden="true"></i> Your Zerodha Account
                     </p>
                     <ul>
                         <a href='#' style={{ textDecoration: 'none', lineHeight: '2.5' }}><li>Your Profile</li></a>
@@ -31,9 +31,9 @@ function CreateTicket() {
                     </ul>
                 </div>
 
-                <div className='col-4 mt-4 p-3'>
+                <div className='col-12 col-sm-6 col-md-4 mt-4 p-3'>
                     <p className='fs-4'>
-                        <i class="fa fa-line-chart" aria-hidden="true"></i> Kite
+                        <i className="fa fa-line-chart" aria-hidden="true"></i> Kite
                     </p>
                     <ul>
                         <a href='#' style={{ textDecoration: 'none', lineHeight: '2.5' }}><li>IPO</li></a>
@@ -44,9 +44,9 @@ function CreateTicket() {
                     </ul>
                 </div>
 
-                <div className='col-4 mt-4 p-3'>
+                <div className='col-12 col-sm-6 col-md-4 mt-4 p-3'>
                     <p className='fs-4'>
-                        <i class="fa fa-inr" aria-hidden="true"></i> Funds
+                        <i className="fa fa-inr" aria-hidden="true"></i> Funds
                     </p>
                     <ul>
                         <a href='#' style={{ textDecoration: 'none', lineHeight: '2.5' }}><li>Add Money</li></a>
@@ -56,9 +56,9 @@ function CreateTicket() {
                     </ul>
                 </div>
 
-                <div className='col-4 mt-4 p-3'>
+                <div className='col-12 col-sm-6 col-md-4 mt-4 p-3'>
                     <p className='fs-4'>
-                        <i class="fa fa-adjust" aria-hidden="true"></i> Console
+                        <i className="fa fa-adjust" aria-hidden="true"></i> Console
                     </p>
                     <ul>
                         <a href='#' style={{ textDecoration: 'none', lineHeight: '2.5' }}><li>Portfolio</li></a>
@@ -70,9 +70,9 @@ function CreateTicket() {
                     </ul>
                 </div>
 
-                <div className='col-4 mt-4 p-3'>
+                <div className='col-12 col-sm-6 col-md-4 mt-4 p-3'>
                     <p className='fs-4'>
-                        <i class="fa fa-clock-o" aria-hidden="true"></i> Coin
+                        <i className="fa fa-clock-o" aria-hidden="true"></i> Coin
                     </p>
                     <ul>
                         <a href='#' style={{ textDecoration: 'none', lineHeight: '2.5' }}><li>Mutual funds</li></a>

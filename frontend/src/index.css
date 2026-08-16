@@ -14,7 +14,13 @@ code {
 }
 
 .nav-link {
-  margin-left: 45px;
+  margin-left: 8px;
+}
+
+@media (min-width: 992px) {
+  .nav-link {
+    margin-left: 20px;
+  }
 }
 
 footer a {
@@ -32,6 +38,15 @@ footer a:hover {
 
 .footer-last a {
   margin-right: 25px;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.text-center.footer-last {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
 }
 
 #supportHero {
@@ -49,6 +64,58 @@ footer a:hover {
   display: flex;
   justify-content: space-between;
   margin: 0 150px;
+}
+
+/* ===== Responsive ===== */
+
+/* Medium screens (tablets, ≤992px) */
+@media (max-width: 992px) {
+  #supportWrapper {
+    margin: 0 40px;
+  }
+}
+
+/* Small screens (phones, ≤768px) */
+@media (max-width: 768px) {
+  body {
+    padding-top: 65px;
+  }
+
+  #supportWrapper {
+    margin: 0 16px;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #supportHero {
+    padding: 24px 16px;
+  }
+
+  .login-card,
+  .signup-card {
+    width: 100%;
+    max-width: 350px;
+    padding: 28px 20px;
+  }
+
+  .login-container,
+  .signup-container {
+    padding: 16px;
+  }
+}
+
+/* Extra small screens (≤480px) */
+@media (max-width: 480px) {
+  .login-card,
+  .signup-card {
+    border-radius: 10px;
+    padding: 24px 16px;
+  }
+
+  .footer-last a {
+    margin-right: 12px;
+    font-size: 13px;
+  }
 }
 
 .searchSupport {
@@ -105,7 +172,8 @@ footer a:hover {
   background: #ffffff;
   padding: 35px 30px;
   border-radius: 15px;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   text-align: center;
   transition: 0.3s ease;
