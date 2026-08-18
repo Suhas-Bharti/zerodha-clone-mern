@@ -28,6 +28,8 @@ app.use(cors({
         "http://localhost:3000",
         "http://localhost:3001",
         "http://localhost:3002",
+        "http://localhost:3003",
+        "http://localhost:3004",
         "https://zerodha-frontend-nine-liart.vercel.app",
         "https://zerodha-backend-6phq.onrender.com"
     ],
